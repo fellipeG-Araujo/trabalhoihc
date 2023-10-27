@@ -1,0 +1,168 @@
+/* -------------------------------------------  CLASS ------------------------------------------- */
+/* -------------------------------------------   TAG  ------------------------------------------- */
+/* -------------------------------------------   ID  -------------------------------------------- */
+
+/* Estilos gerais da tela de perfil */
+.profile {
+    padding: 20px;
+    background-color: #1c2938;
+}
+
+.profile-container {
+    background-image: linear-gradient(to bottom, #1c2833, #34495e); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+}
+
+/* Estilos para o ponto de easter egg */
+#easter-egg {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #6a0dad; /* Roxo */
+    border-radius: 50%;
+    top: 60px;
+    right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Estilos para esconder o botão e o ponto de easter egg */
+.hidden {
+    display: none;
+}
+
+
+.cover-photo {
+    height: 200px;
+    background-color: #27ae60; 
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: -50px auto 20px;
+    border: 4px solid #27ae60; 
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+li:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.profile h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.profile p {
+    margin: 5px 0;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.profile-stats .friends,
+.profile-stats .score,
+.profile-stats .posts {
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.back-to-feed-button {
+    background-color: #27ae60; 
+    width: 22rem;
+    margin: auto;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.back-to-feed-button:hover {
+    background-color: #0d3d21; 
+    text-decoration: none;
+    color: white;
+}
+
+.user-posts li {
+    background-color: #2c3e50;
+    margin-bottom: 20px;
+    padding: 15px 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    list-style-type: none;
+    transition: 0.5s;
+}
+ul{
+    padding: 20px;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-stats {
+    display: flex;
+    align-items: center;
+}
+
+.post-stats span {
+    margin-right: 10px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.score::before {
+    content: "\1F3C6"; /* Código Unicode para um símbolo de troféu */
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.logo-container {
+    border: 3px solid #27ae60; 
+    border-radius: 50%;
+    background-color: #2c3e50;
+    width: 50px; 
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.logo-container img {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

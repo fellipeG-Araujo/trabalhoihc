@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../perfil/perfil.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="../logo.png">
+    <title>Perfil</title>
+</head>
+<body class="profile move">
+    <div class="profile-container">
+        <div class="cover-photo">
+        </div>
+        <div class="profile-info">
+            <div class="profile-photo">
+            </div>
+            <h1>Michael Jackson</h1>
+            <p>Data de Entrada: 01 de junho de 2023</p>
+            <p>Prazer, o melhor músico que já pisou nesse humilde planeta.</p>
+        </div>
+        <div class="profile-stats">
+            <div class="friends"><strong>Amigos:</strong> 349</div> 
+            <div class="score"><strong>Pontuação:</strong> 2500</div>
+            <div class="posts"><strong>Posts:</strong> 120</div>
+        </div>
+        <div class="profile-posts">
+            <ul class="user-posts">
+                <li>
+                    <div class="post-header">
+                        <h2>As pessoas ainda acham que eu faleci, por favor, eu sou eterno.</h2>
+                        <div class="post-stats">
+                            <span class="likes">Curtidas: 50</span>
+                            <span class="comments">Comentários: 10</span>
+                            <span class="shares">Compartilhamentos: 5</span>
+                        </div>
+                    </div>
+                    <p>E eterno rei.</p>
+                </li>
+                <li>
+                    <div class="post-header">
+                        <h2>I'M BAD</h2>
+                        <div class="post-stats">
+                            <span class="likes">Curtidas: 30</span>
+                            <span class="comments">Comentários: 8</span>
+                            <span class="shares">Compartilhamentos: 3</span>
+                        </div>
+                    </div>
+                    <p>Melhor música minha sim ou claro?</p>
+                </li>
+            </ul>
+        </div>
+        <div class="profile-actions">
+            <a href="../feed/feed.html" class="back-to-feed-button">Voltar para o Feed</a>
+            <button id="easteregg-button" class="hidden">Easter Egg</button>
+            <div id="easter-egg"></div>
+        </div>
+    </div>
+    <script>
+        const eastereggButton = document.getElementById('easteregg-button');
+        const easterEgg = document.getElementById('easter-egg');
+
+        // Função para mostrar o ponto de easter egg quando o botão for clicado
+        eastereggButton.addEventListener('click', function () {
+            easterEgg.style.display = 'block';
+        });
+
+        // Função para redirecionar o usuário para o vídeo "Thriller"
+        easterEgg.addEventListener('click', function () {
+            window.location.href = 'https://www.youtube.com/watch?v=sOnqjkJTMaA'; // URL do vídeo do "Thriller"
+        });
+
+        // Função para mostrar o botão após um atraso (você pode ajustar o tempo)
+        setTimeout(function () {
+            eastereggButton.classList.remove('hidden');
+        }, 10000); // Mostrar o botão após 10 segundos
+    </script>
+</body>
+</html>
+
+
+
+

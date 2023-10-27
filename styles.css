@@ -1,0 +1,67 @@
+/* Estilos gerais para todas as telas */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c2938;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.login-box {
+    background-image: linear-gradient(to bottom, #1c2833, #34495e); /* Fundo degradê azul escuro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to bottom, #1c2833, #34495e); /* Fundo degradê azul escuro */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* ----------------------------- ANIMAÇÕES ----------------------------- */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateY(-300px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.move {
+    animation: move 2s ease-in-out forwards;
+}
